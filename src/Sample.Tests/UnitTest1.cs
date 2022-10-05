@@ -22,7 +22,7 @@ public class PreludeSpec
         var a = new Pid("nonhost", "a");
         var b = new Pid("nonhost", "a");
 
-        Pid.Equals(a, b);
+        Assert.True(Pid.Equals(a, b));
 
         Assert.True(a == b);
     }
